@@ -1,3 +1,9 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
 body {
     background-color: black;
 }
@@ -55,4 +61,30 @@ body {
 .save {
     background-color: violet;
    color: white
+}
+
+
+/* Telefones em paisagem e abaixo */
+@media (max-width: 480px) { 
+    .type-area textarea {
+        width: 480px;
+    }
+    .notes textarea {
+        width: 480px;
+    }
+}
+
+/* Telefones em paisagem a tablet em retrato */
+@media (max-width: 767px) {
+    /* estilos aqui */
+}
+
+/* Tablet em retrato a paisagem e desktop */
+@media (min-width: 768px) and (max-width: 979px) {
+    /* estilos aqui */
+}
+
+/* Desktop grande */
+@media (min-width: 1200px) {
+   /* estilos aqui */
 }
