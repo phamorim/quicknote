@@ -1,0 +1,44 @@
+body {
+    background-color: black;
+}
+
+.content {
+   display: flex;
+}
+
+.bloco {
+    display: flex;
+    position: relative;
+    background: white;
+    display: inline-block;
+    margin: 0 auto;
+    flex-direction: column;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.type-area {
+    flex: 1;
+}
+
+.type-area textarea {
+    resize: none;
+    overflow: hidden;
+    width: 500px;
+}
+
+.notes {
+    flex: 1;
+}
+
+.notes textarea {
+    resize: none;
+    overflow: auto;
+    width: 500px;
+    height: 500px;;
+    background: lightgray;
+    border: 0 none;
+    border-top: 2px solid blueviolet;
+    border-bottom:  2px solid blueviolet;
+}
+
