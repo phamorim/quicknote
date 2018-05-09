@@ -2,14 +2,14 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-  }
+}
 
 body {
     background-color: black;
 }
 
 .content {
-   display: flex;
+    display: flex;
 }
 
 .bloco {
@@ -20,7 +20,6 @@ body {
     margin: 0 auto;
     flex-direction: column;
     border-radius: 10px;
-    padding: 10px;
 }
 
 .type-area {
@@ -31,6 +30,7 @@ body {
     resize: none;
     overflow: hidden;
     width: 500px;
+    height: 7vh;
 }
 
 .type-area textarea:hover {
@@ -51,40 +51,32 @@ body {
     resize: none;
     overflow: auto;
     width: 500px;
-    height: 500px;;
+    height: 500px;
     background: lightgray;
     border: 0 none;
     border-top: 2px solid blueviolet;
-    border-bottom:  2px solid blueviolet;
+    border-bottom: 2px solid blueviolet;
 }
 
 .save {
     background-color: violet;
-   color: white
+    color: white;
+    height: 7vh;
+}
+
+.clear {
+    height: 7vh;
+    background-color: burlywood;
 }
 
 
-/* Telefones em paisagem e abaixo */
-@media (max-width: 480px) { 
-    .type-area textarea {
-        width: 480px;
+/* Smartphones */
+
+@media (max-width: 500px) {
+    body {
+        height: auto; 
+        min-height: 100vh;
+        background: none;
+        overflow: hidden;
     }
-    .notes textarea {
-        width: 480px;
-    }
-}
-
-/* Telefones em paisagem a tablet em retrato */
-@media (max-width: 767px) {
-    /* estilos aqui */
-}
-
-/* Tablet em retrato a paisagem e desktop */
-@media (min-width: 768px) and (max-width: 979px) {
-    /* estilos aqui */
-}
-
-/* Desktop grande */
-@media (min-width: 1200px) {
-   /* estilos aqui */
 }

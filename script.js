@@ -6,6 +6,7 @@
    $salvar.addEventListener('click', function(e){
         let note = $typeArea.value + '\n';
         $notes.value += note
+        $typeArea.value = '';
    })
 
    
